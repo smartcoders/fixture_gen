@@ -1,16 +1,16 @@
-cat
-  name:Kit II the mission
-  birth:11-10-2009
-  mother:Kit I
+cat:
+  name: Kit II the mission
+  birth: 2009-05-22
+  mother: Kit I
 
-oldCat
-  name:Kit I
-  birth:11-10-1982
+oldCat:
+  name: Kit I
+  birth: 1982-06-24
   mother: Flufy
 
-dog
-  name:Spike
-  birth:11-12-2000
-  toy:plastic bone
-  age:10
+dog:
+  name: Spike
+  birth: 2000-07-26
+  toy: plastic bone
+  age: 10
   
