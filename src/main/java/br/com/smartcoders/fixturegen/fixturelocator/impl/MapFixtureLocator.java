@@ -1,4 +1,4 @@
-package br.com.smartcoders.fixturegen.fixturemap.impl;
+package br.com.smartcoders.fixturegen.fixturelocator.impl;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -8,18 +8,18 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import br.com.smartcoders.fixturegen.Fixture;
-import br.com.smartcoders.fixturegen.FixtureMap;
+import br.com.smartcoders.fixturegen.FixtureLocator;
 import br.com.smartcoders.fixturegen.fixture.impl.DefaultFixtureImpl;
 
-public class FixtureHashMap implements FixtureMap {
+public class MapFixtureLocator implements FixtureLocator {
   
   private Map<String, Fixture> fixtureMap;
   
-  public FixtureHashMap() {
+  public MapFixtureLocator() {
     fixtureMap = new HashMap<String, Fixture>();
   }
   
-  public FixtureHashMap(Map<String, Object> source) {
+  public MapFixtureLocator(Map<String, Object> source) {
     this();
     buildFixtureMap(source);
   }
