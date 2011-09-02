@@ -12,12 +12,11 @@ public class FixtureGen {
   }
   
   public static FixtureLocator from(FixtureSource source) {
-    // return new MapFixtureLocator(source);
-    return null;
+    return source.getLocator();
   }
   
   public static FixtureSource yaml(String yaml) {
-    return null;
+    return new YamlFixtureSource(yaml);
   }
   
   public static String file(String fileName) {

@@ -10,7 +10,7 @@ import br.com.smartcoders.fixturegen.Fixture;
 
 public class DefaultFixtureImpl implements Fixture {
   
-  private Map<String, Object> fixtures;
+  private final Map<String, Object> fixtures;
   
   public DefaultFixtureImpl(Map<String, Object> fixtures) {
     this.fixtures = fixtures;

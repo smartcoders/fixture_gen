@@ -13,7 +13,7 @@ import br.com.smartcoders.fixturegen.fixture.impl.DefaultFixtureImpl;
 
 public class MapFixtureLocator implements FixtureLocator {
   
-  private Map<String, Fixture> fixtureMap;
+  private final Map<String, Fixture> fixtureMap;
   
   public MapFixtureLocator() {
     fixtureMap = new HashMap<String, Fixture>();
